@@ -1,0 +1,107 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import TypingTitle from './TypingTitle';
+import { sectionScrollVariant, staggerContainer, fadeInUp } from './motion/variants';
+import ScrollDownIndicator from './ScrollDownIndicator';
+import { translations, Language } from '../config/translations';
+import CyberImage from './CyberImage';
+
+interface AboutSectionProps {
+    language: Language;
+}
+
+const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
+    const t = translations[language].about;
+
+    return (
+        <section id="about" className="min-h-screen flex justify-center items-center px-4 overflow-hidden relative pb-24 md:pb-32 pt-10">
+            <motion.div 
+                className="glowing-container relative w-full max-w-7xl will-change-[opacity,transform]"
+                variants={sectionScrollVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+            >
+                {/* Mobile: Stacked, Desktop: Row */}
+                <div className="relative z-10 tech-grid bg-[--card-background] backdrop-blur-[4px] border border-[--card-border-color] rounded-[28px] shadow-2xl w-full flex flex-col md:flex-row overflow-hidden">
+                    
+                    {/* Left Column: Vertical Label + Text Content */}
+                    <div className="flex-1 flex flex-col md:flex-row p-6 md:p-12 order-2 md:order-1">
+                        
+                        {/* Vertical Label (Desktop Only) */}
+                        <div 
+                            className="hidden md:flex items-center justify-center pr-8 border-r-2 min-h-[300px]"
+                            style={{ borderColor: 'rgba(var(--primary-rgb), 0.2)' }}
+                        >
+                            <h3 className="font-bold text-fluid-xl transform -rotate-90 tracking-widest uppercase whitespace-nowrap text-theme-primary [text-shadow:0_0_8px_rgba(var(--primary-rgb),0.6)]">
+                                {t.label}
+                            </h3>
+                        </div>
+
+                        {/* Main Content Area */}
+                        <motion.div 
+                            className="flex-grow md:pl-8 flex flex-col justify-center"
+                            variants={staggerContainer}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                        >
+                            <motion.div variants={fadeInUp}>
+                                <TypingTitle text={t.title} className="text-3xl md:text-fluid-xxl font-bold h-10 md:h-16 text-theme-primary [text-shadow:0_0_8px_rgba(var(--primary-rgb),0.6)]" />
+                            </motion.div>
+                            
+                            <motion.div variants={fadeInUp} className="card-divider w-24 mt-2 mb-6"></motion.div>
+
+                            <div className="space-y-4 text-sm md:text-base text-gray-200 leading-relaxed text-justify">
+                                <motion.p variants={fadeInUp}>
+                                    {t.p1}
+                                </motion.p>
+                                <motion.p variants={fadeInUp}>
+                                    {t.p2}
+                                </motion.p>
+                                <motion.p variants={fadeInUp}>
+                                    {t.p3}
+                                </motion.p>
+                            </div>
+                        </motion.div>
+                    </div>
+
+                    {/* Right Column: Image (Hologram Effect) */}
+                    <div className="w-full md:w-5/12 relative h-64 md:h-auto min-h-[250px] md:min-h-full order-1 md:order-2 bg-black/40 overflow-hidden group">
+                         <motion.div 
+                            variants={fadeInUp}
+                            className="absolute inset-0 w-full h-full flex items-center justify-center"
+                         >
+                            <div className="relative w-full h-full">
+                                <CyberImage 
+                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
+                                    alt="Profile Hologram" 
+                                    className="w-full h-full object-cover opacity-60 filter grayscale contrast-125 brightness-110 mix-blend-screen"
+                                    containerClassName="w-full h-full"
+                                />
+                                <div 
+                                    className="absolute inset-0 pointer-events-none z-10"
+                                    style={{
+                                        background: 'linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5) 51%)',
+                                        backgroundSize: '100% 4px'
+                                    }}
+                                ></div>
+                                <div className="absolute inset-0 bg-theme-primary/20 mix-blend-overlay z-20 animate-pulse"></div>
+                                <div className="absolute top-0 left-0 w-full h-[10%] bg-theme-primary/30 blur-md animate-[slide-bottom_3s_linear_infinite] z-20 opacity-30"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90 z-30"></div>
+                            </div>
+                            
+                            {/* Corner Accents */}
+                            <div className="absolute top-6 right-6 w-8 h-8 md:w-12 md:h-12 border-t-2 border-r-2 border-theme-primary shadow-[0_0_10px_var(--primary-color)] rounded-tr-xl z-40 opacity-80"></div>
+                            <div className="absolute bottom-6 left-6 w-8 h-8 md:w-12 md:h-12 border-b-2 border-l-2 border-theme-primary shadow-[0_0_10px_var(--primary-color)] rounded-bl-xl z-40 opacity-80"></div>
+                        </motion.div>
+                    </div>
+
+                </div>
+            </motion.div>
+            <ScrollDownIndicator targetId="#skills" />
+        </section>
+    );
+};
+
+export default AboutSection;
