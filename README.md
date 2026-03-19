@@ -148,9 +148,6 @@ npm run deploy
 
 > Observação: o projeto usa `base: './'` no `vite.config.ts`, adequado para deploy estático em subpath.
 
-## ⚙️ Variáveis de Ambiente
-
-No estado atual, este projeto **não exige variáveis de ambiente** para rodar localmente.
 
 ## 📄 Licença
 

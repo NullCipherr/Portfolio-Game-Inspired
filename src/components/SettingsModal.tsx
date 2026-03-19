@@ -22,6 +22,7 @@ interface SettingsModalProps {
         backgroundPattern: string;
         language: Language;
         scrollMode: 'snap' | 'free';
+        scrollSnapBehavior: 'soft' | 'strict';
     };
     updateSettings: (key: string, value: any) => void;
     language: Language;
@@ -225,58 +226,73 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
 
     return (
         <motion.div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50"
+            className="fixed inset-0 z-[100] bg-black"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            onClick={onClose}
         >
-            <motion.div
-                className="glowing-container relative w-full max-w-5xl h-[90vh] max-h-[700px]"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                onClick={(e) => e.stopPropagation()}
-            >
-                <div
-                    className="relative z-10 w-full h-full flex flex-col text-white overflow-hidden tech-grid bg-black/40 backdrop-blur-xl border border-white/10 rounded-[28px]"
-                    style={{ boxShadow: `inset 0 0 50px rgba(var(--primary-rgb), 0.1), inset 0 1px 2px rgba(255,255,255,0.1)` }}
-                >
-                    <button onClick={onClose} className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors z-20" aria-label="Close Settings">
+            <div
+                className="absolute inset-0 tech-grid"
+                style={{
+                    background: 'radial-gradient(circle at 20% 10%, rgba(var(--primary-rgb), 0.14), transparent 45%), radial-gradient(circle at 80% 90%, rgba(var(--primary-rgb), 0.10), transparent 45%)'
+                }}
+            />
+
+            <div className="relative z-10 w-full h-full flex flex-col text-white overflow-hidden">
+                <header className="h-16 shrink-0 border-b border-white/10 bg-black/40 backdrop-blur-xl px-4 md:px-8 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <button
+                            onClick={onClose}
+                            className="w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:bg-white/10 hover:text-white transition-colors"
+                            aria-label="Close Settings"
+                        >
+                            <i className="fas fa-chevron-left"></i>
+                        </button>
+                        <div>
+                            <h2 className="font-['Audiowide'] text-lg text-white leading-none">SYSTEM SETTINGS</h2>
+                            <p className="text-[11px] text-gray-400 uppercase tracking-widest mt-1">Game Menu Interface</p>
+                        </div>
+                    </div>
+                    <button
+                        onClick={onClose}
+                        className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors"
+                        aria-label="Close Settings"
+                    >
                         <i className="fas fa-times"></i>
                     </button>
+                </header>
 
-                    <div className="flex flex-row flex-grow min-h-0">
-                        <nav className="relative flex flex-col p-4 w-64 border-r border-white/5 shrink-0 bg-black/30">
-                            <div className="pb-4 mb-4 border-b border-white/5">
-                                <h2 className="font-['Audiowide'] text-lg text-white">SYSTEM</h2>
-                                <p className="text-xs text-gray-400 mt-1">Interface Calibration</p>
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                {desktopTabs.map((tab) => (
-                                    <button
-                                        key={tab.id}
-                                        onClick={() => { playSound('click'); setActiveDesktopTab(tab.id); }}
-                                        onMouseEnter={() => playSound('hover')}
-                                        className="relative w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-200 shrink-0 isolate text-left"
-                                    >
-                                        {activeDesktopTab === tab.id && (
-                                            <motion.div
-                                                layoutId="settings-tab-indicator"
-                                                className="absolute inset-0 bg-theme-primary/10 border border-theme-primary/30 rounded-lg z-0"
-                                                transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                                            />
-                                        )}
-                                        <i className={`${tab.icon} w-5 text-center transition-colors ${activeDesktopTab === tab.id ? 'text-theme-primary' : 'text-gray-400'}`}></i>
-                                        <span className={`transition-colors ${activeDesktopTab === tab.id ? 'text-white' : 'text-gray-400'}`}>{tab.label}</span>
-                                    </button>
-                                ))}
-                            </div>
-                        </nav>
+                <div className="flex flex-row flex-grow min-h-0">
+                    <nav className="relative flex flex-col p-4 md:p-6 w-[260px] border-r border-white/10 shrink-0 bg-black/45 backdrop-blur-xl">
+                        <div className="pb-4 mb-4 border-b border-white/10">
+                            <h3 className="font-['Audiowide'] text-base text-white">MENU</h3>
+                            <p className="text-xs text-gray-400 mt-1">Calibration Panels</p>
+                        </div>
+                        <div className="flex flex-col gap-2 overflow-y-auto no-scrollbar">
+                            {desktopTabs.map((tab) => (
+                                <button
+                                    key={tab.id}
+                                    onClick={() => { playSound('click'); setActiveDesktopTab(tab.id); }}
+                                    onMouseEnter={() => playSound('hover')}
+                                    className="relative w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-200 shrink-0 isolate text-left"
+                                >
+                                    {activeDesktopTab === tab.id && (
+                                        <motion.div
+                                            layoutId="settings-tab-indicator"
+                                            className="absolute inset-0 bg-theme-primary/12 border border-theme-primary/40 rounded-lg z-0 shadow-[0_0_20px_rgba(var(--primary-rgb),0.15)]"
+                                            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                                        />
+                                    )}
+                                    <i className={`${tab.icon} w-5 text-center transition-colors ${activeDesktopTab === tab.id ? 'text-theme-primary' : 'text-gray-400'}`}></i>
+                                    <span className={`transition-colors ${activeDesktopTab === tab.id ? 'text-white' : 'text-gray-400'}`}>{tab.label}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </nav>
 
-                        <div className="flex-1 p-6 overflow-y-auto no-scrollbar">
+                    <main className="flex-1 min-w-0 p-4 md:p-8 overflow-y-auto no-scrollbar">
+                        <div className="w-full max-w-5xl mx-auto">
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={activeDesktopTab}
@@ -286,16 +302,20 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, settings
                                     transition={{ duration: 0.25, staggerChildren: 0.07 }}
                                 >
                                     <header className="mb-8">
-                                        <h1 className="text-2xl font-bold text-white font-['Audiowide']">{activeDesktopTabInfo?.label}</h1>
-                                        <p className="text-sm text-gray-400 mt-1">{activeDesktopTabInfo?.desc}</p>
+                                        <h1 className="text-2xl md:text-3xl font-bold text-white font-['Audiowide']">{activeDesktopTabInfo?.label}</h1>
+                                        <p className="text-sm text-gray-400 mt-2">{activeDesktopTabInfo?.desc}</p>
+                                        <div
+                                            className="mt-4 h-px w-full"
+                                            style={{ background: 'linear-gradient(90deg, rgba(var(--primary-rgb), 0.4), rgba(255,255,255,0.1), transparent)' }}
+                                        />
                                     </header>
                                     <DesktopTabContent />
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                    </div>
+                    </main>
                 </div>
-            </motion.div>
+            </div>
         </motion.div>
     );
 };
@@ -490,6 +510,33 @@ const InterfaceTab: React.FC<Partial<TabContentProps>> = ({ t, settings, updateS
                     </button>
                 </div>
             </motion.div>
+
+            {settings.scrollMode === 'snap' && (
+                <motion.div className="bg-white/5 border border-white/5 rounded-lg p-6" variants={itemVariants}>
+                    <div className="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 className="text-white font-medium">{t.snap_style_title}</h3>
+                            <p className="text-gray-500 text-xs mt-1">{t.snap_style_desc}</p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                        <button
+                            onClick={() => { playSound('click'); updateSettings('scrollSnapBehavior', 'soft'); }}
+                            className={`flex flex-col items-center justify-center p-6 rounded-xl border transition-all ${settings.scrollSnapBehavior === 'soft' ? 'bg-theme-primary/20 border-theme-primary text-white shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)]' : 'bg-black/20 border-white/5 text-gray-500 hover:bg-white/5'}`}
+                        >
+                            <i className="fas fa-feather-alt text-2xl mb-3"></i>
+                            <span className="uppercase text-xs font-bold tracking-widest">{t.snap_style_soft}</span>
+                        </button>
+                        <button
+                            onClick={() => { playSound('click'); updateSettings('scrollSnapBehavior', 'strict'); }}
+                            className={`flex flex-col items-center justify-center p-6 rounded-xl border transition-all ${settings.scrollSnapBehavior === 'strict' ? 'bg-theme-primary/20 border-theme-primary text-white shadow-[0_0_15px_rgba(var(--primary-rgb),0.2)]' : 'bg-black/20 border-white/5 text-gray-500 hover:bg-white/5'}`}
+                        >
+                            <i className="fas fa-bullseye text-2xl mb-3"></i>
+                            <span className="uppercase text-xs font-bold tracking-widest">{t.snap_style_strict}</span>
+                        </button>
+                    </div>
+                </motion.div>
+            )}
         </div>
     )
 };

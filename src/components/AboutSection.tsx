@@ -23,14 +23,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
                 viewport={{ once: true, margin: "-50px" }}
             >
                 {/* Mobile: Stacked, Desktop: Row */}
-                <div className="relative z-10 tech-grid bg-[--card-background] backdrop-blur-[4px] border border-[--card-border-color] rounded-[28px] shadow-2xl w-full flex flex-col md:flex-row overflow-hidden">
+                <div className="relative z-10 tech-grid bg-[--card-background] backdrop-blur-[4px] border border-[--card-border-color] rounded-[28px] shadow-2xl w-full flex flex-col lg:flex-row overflow-hidden">
                     
                     {/* Left Column: Vertical Label + Text Content */}
-                    <div className="flex-1 flex flex-col md:flex-row p-6 md:p-12 order-2 md:order-1">
+                    <div className="flex-1 flex flex-col lg:flex-row p-6 md:p-12 order-2 lg:order-1">
                         
                         {/* Vertical Label (Desktop Only) */}
                         <div 
-                            className="hidden md:flex items-center justify-center pr-8 border-r-2 min-h-[300px]"
+                            className="hidden lg:flex items-center justify-center pr-8 border-r-2 min-h-[300px]"
                             style={{ borderColor: 'rgba(var(--primary-rgb), 0.2)' }}
                         >
                             <h3 className="font-bold text-fluid-xl transform -rotate-90 tracking-widest uppercase whitespace-nowrap text-theme-primary [text-shadow:0_0_8px_rgba(var(--primary-rgb),0.6)]">
@@ -67,7 +67,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
                     </div>
 
                     {/* Right Column: Image (Hologram Effect) */}
-                    <div className="w-full md:w-5/12 relative h-64 md:h-auto min-h-[250px] md:min-h-full order-1 md:order-2 bg-black/40 overflow-hidden group">
+                    <div className="block md:hidden lg:block w-full lg:w-5/12 relative h-64 lg:h-auto min-h-[250px] lg:min-h-full order-1 lg:order-2 bg-black/40 overflow-hidden group">
                          <motion.div 
                             variants={fadeInUp}
                             className="absolute inset-0 w-full h-full flex items-center justify-center"

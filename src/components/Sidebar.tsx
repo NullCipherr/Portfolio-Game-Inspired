@@ -154,7 +154,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <>
             {/* --- Desktop Sidebar (Left) --- */}
             <motion.nav 
-                className="sidebar-shell hidden md:flex flex-col fixed left-0 top-0 h-screen z-50 overflow-hidden bg-[--card-background] tech-grid will-change-[width]"
+                className="sidebar-shell hidden lg:flex flex-col fixed left-0 top-0 h-screen z-50 overflow-hidden bg-[--card-background] tech-grid will-change-[width]"
                 style={{ borderColor: `rgba(${primaryRgb}, 0.3)` }}
                 animate={{ width: isExpanded ? '16rem' : '5rem' }}
                 transition={{ type: "spring", stiffness: 400, damping: 40 }}
@@ -316,8 +316,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                 </AnimatePresence>
             </motion.nav>
 
-            {/* --- Mobile Bottom Bar (Optimized) --- */}
-            <nav className="md:hidden fixed bottom-0 left-0 w-full h-16 bg-[#050505]/90 backdrop-blur-xl border-t border-theme-primary/20 z-50 flex justify-evenly items-center px-1 pb-safe shadow-[0_-5px_20px_rgba(0,0,0,0.8)]">
+            {/* --- Mobile/Tablet Bottom Bar (Optimized) --- */}
+            <nav className="lg:hidden fixed bottom-0 left-0 w-full h-16 bg-[#050505]/90 backdrop-blur-xl border-t border-theme-primary/20 z-50 flex justify-evenly items-center px-1 pb-safe shadow-[0_-5px_20px_rgba(0,0,0,0.8)]">
                 {NAV_ITEMS.map((item) => {
                     const isActive = activeSection === item.href;
                     return (

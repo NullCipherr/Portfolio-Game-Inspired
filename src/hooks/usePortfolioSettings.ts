@@ -20,6 +20,7 @@ const DEFAULT_SETTINGS = {
     backgroundPattern: 'Grid',
     language: 'en' as Language,
     scrollMode: 'snap' as 'snap' | 'free', // New UX Feature
+    scrollSnapBehavior: 'soft' as 'soft' | 'strict',
 };
 
 const loadSettings = () => {

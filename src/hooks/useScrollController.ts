@@ -5,17 +5,8 @@ import { useState, useEffect, useRef } from 'react';
 
 export const useScrollController = (loading: boolean, scrollMode: 'snap' | 'free' = 'snap') => {
     const [activeSection, setActiveSection] = useState('#home');
-    const [isScrolling, setIsScrolling] = useState(false);
     const mainRef = useRef<HTMLElement>(null);
-    const cachedDestinations = useRef<HTMLElement[]>([]);
-
-    // Cache scroll destinations
-    useEffect(() => {
-        if (!loading && mainRef.current) {
-            const mainEl = mainRef.current;
-            cachedDestinations.current = Array.from(mainEl.querySelectorAll<HTMLElement>('section, footer'));
-        }
-    }, [loading]);
+    const activeSectionRef = useRef(activeSection);
 
     // Simplified active section detection using Intersection Observer
     useEffect(() => {
@@ -24,22 +15,28 @@ export const useScrollController = (loading: boolean, scrollMode: 'snap' | 'free
 
         const observerOptions = {
             root: mainEl,
-            threshold: 0.5,
+            threshold: scrollMode === 'snap' ? 0.6 : 0.35,
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(`#${entry.target.id}`);
-                }
-            });
+            const mostVisibleEntry = entries
+                .filter((entry) => entry.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (!mostVisibleEntry?.target?.id) return;
+
+            const nextSection = `#${mostVisibleEntry.target.id}`;
+            if (activeSectionRef.current !== nextSection) {
+                activeSectionRef.current = nextSection;
+                setActiveSection(nextSection);
+            }
         }, observerOptions);
 
         const sections = mainEl.querySelectorAll('section, footer');
         sections.forEach((section) => observer.observe(section));
 
         return () => observer.disconnect();
-    }, [loading]);
+    }, [loading, scrollMode]);
 
     return {
         activeSection,

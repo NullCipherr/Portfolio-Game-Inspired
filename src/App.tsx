@@ -42,14 +42,19 @@ const App: React.FC = () => {
     const [isSidebarHovered, setIsSidebarHovered] = useState(false);
     const [settingsOpen, setSettingsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(false);
 
     const isSidebarExpanded = isSidebarPinned || isSidebarHovered;
 
     useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth < 768);
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
+        const checkViewport = () => {
+            const width = window.innerWidth;
+            setIsMobile(width < 768);
+            setIsDesktop(width >= 1024);
+        };
+        checkViewport();
+        window.addEventListener('resize', checkViewport);
+        return () => window.removeEventListener('resize', checkViewport);
     }, []);
 
     useEffect(() => {
@@ -127,13 +132,13 @@ const App: React.FC = () => {
                                     <motion.main
                                         id="content"
                                         ref={mainRef}
-                                        className={`flex-1 relative z-10 h-screen overflow-y-auto overflow-x-hidden interactive-glow-bg will-change-[padding] pb-24 md:pb-0 ${settings.scrollMode === 'snap' ? 'scroll-snap-container' : ''}`}
+                                        className={`flex-1 relative z-10 h-screen overflow-y-auto overflow-x-hidden interactive-glow-bg will-change-[padding] pb-24 md:pb-0 ${settings.scrollMode === 'snap' ? `scroll-snap-container ${settings.scrollSnapBehavior === 'strict' ? 'scroll-snap-strict' : 'scroll-snap-soft'}` : ''}`}
                                         initial={false}
                                         animate={{
-                                            paddingLeft: isMobile ? '0rem' : (isSidebarExpanded ? '16rem' : '5rem')
+                                            paddingLeft: isDesktop ? (isSidebarExpanded ? '16rem' : '5rem') : '0rem'
                                         }}
                                         transition={{ type: "spring", stiffness: 400, damping: 40 }}
-                                        style={{ scrollBehavior: 'smooth' }}
+                                        style={{ scrollBehavior: settings.scrollMode === 'snap' ? 'auto' : 'smooth' }}
                                     >
                                         <div className={settings.scrollMode === 'snap' ? 'scroll-snap-item' : ''}>
                                             <HomeSection language={settings.language} />
