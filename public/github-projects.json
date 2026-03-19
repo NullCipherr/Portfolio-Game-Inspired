@@ -1,0 +1,848 @@
+[
+  {
+    "title": "Portfolio-Game-Inspired",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/Portfolio-Game-Inspired",
+    "codeLink": "https://github.com/NullCipherr/Portfolio-Game-Inspired",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Portfolio-Game-Inspired",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2026-03-19. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Aurora-SoundLab",
+    "description": "This repository contains a real-time sound environment laboratory built with React, Node.js, and the Web Audio API, enabling users to create, customize, and share immersive audio experiences.",
+    "link": "https://github.com/NullCipherr/Aurora-SoundLab",
+    "codeLink": "https://github.com/NullCipherr/Aurora-SoundLab",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Aurora-SoundLab",
+    "technologies": [
+      "express",
+      "nodejs",
+      "react",
+      "webaudioapi"
+    ],
+    "details": "This repository contains a real-time sound environment laboratory built with React, Node.js, and the Web Audio API, enabling users to create, customize, and share immersive audio experiences. Last update: 2026-03-19. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "NullCipherr",
+    "description": "Config files for my GitHub profile.",
+    "link": "https://github.com/NullCipherr",
+    "codeLink": "https://github.com/NullCipherr/NullCipherr",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/NullCipherr",
+    "technologies": [
+      "config",
+      "github-config"
+    ],
+    "details": "Config files for my GitHub profile. Last update: 2026-03-19. Stars: 6. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "User_Authentication_System",
+    "description": "This repository contains a web-based user authentication system built with Flask and SQLite, featuring secure user registration, password hashing, session management, and a server-rendered interface.",
+    "link": "https://github.com/NullCipherr/User_Authentication_System",
+    "codeLink": "https://github.com/NullCipherr/User_Authentication_System",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/User_Authentication_System",
+    "technologies": [
+      "css3",
+      "flask",
+      "jinja2",
+      "python",
+      "sqlite"
+    ],
+    "details": "This repository contains a web-based user authentication system built with Flask and SQLite, featuring secure user registration, password hashing, session management, and a server-rendered interface. Last update: 2026-03-18. Stars: 1. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "WebGL-Fluid-Simulator",
+    "description": "This repository contains a real-time 2D fluid simulation built with React, TypeScript, and WebGL, featuring GPU-accelerated rendering, interactive physics controls, and multiple visualization modes.",
+    "link": "https://github.com/NullCipherr/WebGL-Fluid-Simulator",
+    "codeLink": "https://github.com/NullCipherr/WebGL-Fluid-Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/WebGL-Fluid-Simulator",
+    "technologies": [
+      "react",
+      "tailwindcss",
+      "typescript",
+      "vite",
+      "webgl"
+    ],
+    "details": "This repository contains a real-time 2D fluid simulation built with React, TypeScript, and WebGL, featuring GPU-accelerated rendering, interactive physics controls, and multiple visualization modes. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Retro-Games-Hub",
+    "description": "This repository contains a retro arcade hub built with HTML, CSS, and JavaScript, featuring a collection of classic browser games organized in a neon-themed interactive interface.",
+    "link": "https://github.com/NullCipherr/Retro-Games-Hub",
+    "codeLink": "https://github.com/NullCipherr/Retro-Games-Hub",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Retro-Games-Hub",
+    "technologies": [
+      "css3",
+      "github-pages",
+      "html5",
+      "javascript"
+    ],
+    "details": "This repository contains a retro arcade hub built with HTML, CSS, and JavaScript, featuring a collection of classic browser games organized in a neon-themed interactive interface. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "WebGL-Particle-Simulator",
+    "description": "This repository contains a high-performance particle simulation laboratory built with React, TypeScript, and WebGL2, featuring real-time physics, GPU-accelerated rendering, and interactive visual presets.",
+    "link": "https://github.com/NullCipherr/WebGL-Particle-Simulator",
+    "codeLink": "https://github.com/NullCipherr/WebGL-Particle-Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/WebGL-Particle-Simulator",
+    "technologies": [
+      "react",
+      "tailwind",
+      "typescript",
+      "vite",
+      "webgl"
+    ],
+    "details": "This repository contains a high-performance particle simulation laboratory built with React, TypeScript, and WebGL2, featuring real-time physics, GPU-accelerated rendering, and interactive visual presets. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "AutomataPy",
+    "description": "This repository contains a desktop cellular automata simulator built with Python, featuring real-time grid evolution, multiple classic automaton rules, and an interactive Tkinter interface.",
+    "link": "https://github.com/NullCipherr/AutomataPy",
+    "codeLink": "https://github.com/NullCipherr/AutomataPy",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/AutomataPy",
+    "technologies": [
+      "numpy",
+      "python",
+      "scipy",
+      "tkinter"
+    ],
+    "details": "This repository contains a desktop cellular automata simulator built with Python, featuring real-time grid evolution, multiple classic automaton rules, and an interactive Tkinter interface. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Atmos-Weather-Visualizer",
+    "description": "This repository contains a modular front-end weather application with real-time data, dynamic theming based on climate conditions, and persistent user preferences.",
+    "link": "https://github.com/NullCipherr/Atmos-Weather-Visualizer",
+    "codeLink": "https://github.com/NullCipherr/Atmos-Weather-Visualizer",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Atmos-Weather-Visualizer",
+    "technologies": [
+      "JavaScript"
+    ],
+    "details": "This repository contains a modular front-end weather application with real-time data, dynamic theming based on climate conditions, and persistent user preferences. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Neuro-Evolution-Sandbox",
+    "description": "This repository contains a neuroevolution sandbox with a Python backend (FastAPI, Celery, NumPy) and a React + Canvas frontend for real-time simulation.",
+    "link": "https://github.com/NullCipherr/Neuro-Evolution-Sandbox",
+    "codeLink": "https://github.com/NullCipherr/Neuro-Evolution-Sandbox",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Neuro-Evolution-Sandbox",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains a neuroevolution sandbox with a Python backend (FastAPI, Celery, NumPy) and a React + Canvas frontend for real-time simulation. Last update: 2026-03-16. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Live-Crypto-Tracker",
+    "description": "This repository contains a real-time crypto market tracker built with React, TypeScript, and Vite, featuring live market data, watchlists, analytics panels, and responsive dashboard components.",
+    "link": "https://github.com/NullCipherr/Live-Crypto-Tracker",
+    "codeLink": "https://github.com/NullCipherr/Live-Crypto-Tracker",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Live-Crypto-Tracker",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "This repository contains a real-time crypto market tracker built with React, TypeScript, and Vite, featuring live market data, watchlists, analytics panels, and responsive dashboard components. Last update: 2026-03-13. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Cannon-Car-Simulator",
+    "description": "This repository contains a 3D vehicle physics simulator built with Three.js and cannon-es, showcasing raycast-based car physics, dynamic environments, and multiple camera modes.",
+    "link": "https://github.com/NullCipherr/Cannon-Car-Simulator",
+    "codeLink": "https://github.com/NullCipherr/Cannon-Car-Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Cannon-Car-Simulator",
+    "technologies": [
+      "JavaScript"
+    ],
+    "details": "This repository contains a 3D vehicle physics simulator built with Three.js and cannon-es, showcasing raycast-based car physics, dynamic environments, and multiple camera modes. Last update: 2026-03-12. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "React-Apollo-Dashboard",
+    "description": "This repository contains a lunar mission simulation dashboard that models Saturn V rocket stages, orbital mechanics, and spacecraft systems through a real-time React interface.",
+    "link": "https://github.com/NullCipherr/React-Apollo-Dashboard",
+    "codeLink": "https://github.com/NullCipherr/React-Apollo-Dashboard",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/React-Apollo-Dashboard",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "This repository contains a lunar mission simulation dashboard that models Saturn V rocket stages, orbital mechanics, and spacecraft systems through a real-time React interface. Last update: 2026-03-11. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "React-Aquarium-Simulator",
+    "description": "This repository contains a high-fidelity aquarium ecosystem simulator built with React and TypeScript, featuring dynamic fish AI behaviors, environmental management, and realistic water chemistry simulation.",
+    "link": "https://github.com/NullCipherr/React-Aquarium-Simulator",
+    "codeLink": "https://github.com/NullCipherr/React-Aquarium-Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/React-Aquarium-Simulator",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "This repository contains a high-fidelity aquarium ecosystem simulator built with React and TypeScript, featuring dynamic fish AI behaviors, environmental management, and realistic water chemistry simulation. Last update: 2026-03-11. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Themis-Sort-Visualizer",
+    "description": "This repository contains a sorting algorithm visualization tool built with React and TypeScript, including real-time animations, performance counters, and educational explanations for each algorithm.",
+    "link": "https://github.com/NullCipherr/Themis-Sort-Visualizer",
+    "codeLink": "https://github.com/NullCipherr/Themis-Sort-Visualizer",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Themis-Sort-Visualizer",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "This repository contains a sorting algorithm visualization tool built with React and TypeScript, including real-time animations, performance counters, and educational explanations for each algorithm. Last update: 2026-03-11. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "RV-Password-Generator",
+    "description": "This repository contains a customizable password generator built with React, TypeScript, and Vite, featuring password, passphrase, and mnemonic generation with visual entropy analysis.",
+    "link": "https://github.com/NullCipherr/RV-Password-Generator",
+    "codeLink": "https://github.com/NullCipherr/RV-Password-Generator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/RV-Password-Generator",
+    "technologies": [
+      "TypeScript"
+    ],
+    "details": "This repository contains a customizable password generator built with React, TypeScript, and Vite, featuring password, passphrase, and mnemonic generation with visual entropy analysis. Last update: 2026-03-11. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Interpreter_Math_C",
+    "description": " Interpreter Math C is a command-line C program that evaluates mathematical expressions, supports basic arithmetic and logical operators, and includes functions like sine, cosine, and square root. Users can define variables, use them in calculations, and view or export a history of past calculations. The program offers a simple, interactive interfa",
+    "link": "https://github.com/NullCipherr/Interpreter_Math_C",
+    "codeLink": "https://github.com/NullCipherr/Interpreter_Math_C",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Interpreter_Math_C",
+    "technologies": [
+      "c",
+      "interpreter",
+      "math"
+    ],
+    "details": " Interpreter Math C is a command-line C program that evaluates mathematical expressions, supports basic arithmetic and logical operators, and includes functions like sine, cosine, and square root. Users can define variables, use them in calculations, and view or export a history of past calculations. The program offers a simple, interactive interfa Last update: 2026-03-06. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Apollo-11-Simulator",
+    "description": "A C-based simulation of the Apollo 11 mission control systems, featuring real-time monitoring and control of flight dynamics, propulsion, and power management. This project aims to replicate critical spacecraft operations, providing an interactive and educational experience in aerospace system simulations.",
+    "link": "https://github.com/NullCipherr/Apollo-11-Simulator",
+    "codeLink": "https://github.com/NullCipherr/Apollo-11-Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Apollo-11-Simulator",
+    "technologies": [
+      "apollo-11-simulation",
+      "c"
+    ],
+    "details": "A C-based simulation of the Apollo 11 mission control systems, featuring real-time monitoring and control of flight dynamics, propulsion, and power management. This project aims to replicate critical spacecraft operations, providing an interactive and educational experience in aerospace system simulations. Last update: 2026-03-06. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "NullCipherr.github.io",
+    "description": "This repository hosts NullCipherr's personal website, developed using GitHub Pages. The site is a platform for sharing projects, publications, and other initiatives, highlighting skills in web development, programming, and design.",
+    "link": "https://nullcipherr.github.io/",
+    "codeLink": "https://github.com/NullCipherr/NullCipherr.github.io",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/NullCipherr.github.io",
+    "technologies": [
+      "CSS"
+    ],
+    "details": "This repository hosts NullCipherr's personal website, developed using GitHub Pages. The site is a platform for sharing projects, publications, and other initiatives, highlighting skills in web development, programming, and design. Last update: 2026-03-05. Stars: 2. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "hyprland-dotfiles",
+    "description": "My personal collection of Hyprland configuration files and related dotfiles for a customized Linux desktop environment. This repository includes settings for the Hyprland window manager, along with other configuration files for tools and applications to create a cohesive and efficient workflow.",
+    "link": "https://github.com/NullCipherr/hyprland-dotfiles",
+    "codeLink": "https://github.com/NullCipherr/hyprland-dotfiles",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/hyprland-dotfiles",
+    "technologies": [
+      "hyprland",
+      "hyprland-dotfiles",
+      "hyprland-rice"
+    ],
+    "details": "My personal collection of Hyprland configuration files and related dotfiles for a customized Linux desktop environment. This repository includes settings for the Hyprland window manager, along with other configuration files for tools and applications to create a cohesive and efficient workflow. Last update: 2026-03-05. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "Terminal-Atom-Animation",
+    "description": "This repository contains a C-developed TUI application that serves as a terminal animation gallery. It features a Periodic Table menu implemented with ncurses, allowing users to select and visualize interactive Bohr model animations for various chemical elements.",
+    "link": "https://github.com/NullCipherr/Terminal-Atom-Animation",
+    "codeLink": "https://github.com/NullCipherr/Terminal-Atom-Animation",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Terminal-Atom-Animation",
+    "technologies": [
+      "animation",
+      "c",
+      "tui"
+    ],
+    "details": "This repository contains a C-developed TUI application that serves as a terminal animation gallery. It features a Periodic Table menu implemented with ncurses, allowing users to select and visualize interactive Bohr model animations for various chemical elements. Last update: 2026-03-04. Stars: 0. Forks: 0.",
+    "status": "Live"
+  },
+  {
+    "title": "DeepSeek-8Bit-UserStyle",
+    "description": "This repository hosts the DeepSeek-8Bit-UserStyle, a custom UserStyle designed to transform the DeepSeek interface into a retro 8-bit aesthetic experience combined with a Liquid Glass-inspired UI.",
+    "link": "https://github.com/NullCipherr/DeepSeek-8Bit-UserStyle",
+    "codeLink": "https://github.com/NullCipherr/DeepSeek-8Bit-UserStyle",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/DeepSeek-8Bit-UserStyle",
+    "technologies": [
+      "stylus-css",
+      "user-style"
+    ],
+    "details": "This repository hosts the DeepSeek-8Bit-UserStyle, a custom UserStyle designed to transform the DeepSeek interface into a retro 8-bit aesthetic experience combined with a Liquid Glass-inspired UI. Last update: 2025-09-12. Stars: 0. Forks: 0.",
+    "status": "Beta"
+  },
+  {
+    "title": "psi-andrea-macagnani",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://nullcipherr.github.io/psi-andrea-macagnani/",
+    "codeLink": "https://github.com/NullCipherr/psi-andrea-macagnani",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/psi-andrea-macagnani",
+    "technologies": [
+      "CSS"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2025-09-02. Stars: 0. Forks: 0.",
+    "status": "Beta"
+  },
+  {
+    "title": "bash-config",
+    "description": "A custom .bashrc configuration file designed to enhance the terminal experience. It includes features like command history management, window size adjustment, interactive prompt customization with color support, useful aliases, and command spell correction. This configuration aims to streamline terminal operations and improve productivity with help",
+    "link": "https://github.com/NullCipherr/bash-config",
+    "codeLink": "https://github.com/NullCipherr/bash-config",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/bash-config",
+    "technologies": [
+      "bashrc"
+    ],
+    "details": "A custom .bashrc configuration file designed to enhance the terminal experience. It includes features like command history management, window size adjustment, interactive prompt customization with color support, useful aliases, and command spell correction. This configuration aims to streamline terminal operations and improve productivity with help Last update: 2025-02-25. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "rps-battle-arena",
+    "description": "RPS Battle Arena is a distributed multiplayer game system based on the classic Rock, Paper, Scissors. Using a client-server architecture with XML-RPC, the game offers real-time matches with an intuitive graphical interface built with Pygame. The system includes a matchmaking mechanism, a dynamically updated scoreboard, and support for best-of-f",
+    "link": "https://github.com/NullCipherr/rps-battle-arena",
+    "codeLink": "https://github.com/NullCipherr/rps-battle-arena",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/rps-battle-arena",
+    "technologies": [
+      "Python"
+    ],
+    "details": "RPS Battle Arena is a distributed multiplayer game system based on the classic Rock, Paper, Scissors. Using a client-server architecture with XML-RPC, the game offers real-time matches with an intuitive graphical interface built with Pygame. The system includes a matchmaking mechanism, a dynamically updated scoreboard, and support for best-of-f Last update: 2025-01-30. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "ALK_Compiler",
+    "description": "This is a simple compiler developed as part of the Compilers course at UEM (Universidade Estadual de Maringá). The compiler implements essential stages of the compilation process, including lexical analysis, syntax analysis, and semantic analysis. The lexical analyzer scans the input code, breaking it into meaningful tokens. The syntax analyzer che",
+    "link": "https://github.com/NullCipherr/ALK_Compiler",
+    "codeLink": "https://github.com/NullCipherr/ALK_Compiler",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/ALK_Compiler",
+    "technologies": [
+      "C"
+    ],
+    "details": "This is a simple compiler developed as part of the Compilers course at UEM (Universidade Estadual de Maringá). The compiler implements essential stages of the compilation process, including lexical analysis, syntax analysis, and semantic analysis. The lexical analyzer scans the input code, breaking it into meaningful tokens. The syntax analyzer che Last update: 2025-01-29. Stars: 0. Forks: 1.",
+    "status": "Prototype"
+  },
+  {
+    "title": "vim-config",
+    "description": "This repository contains a set of custom configurations for the Vim text editor, focused on optimization for compiling C and Python code. In addition to efficient compilation shortcuts, it includes improvements to the user interface, performance settings, and best practices for a more productive development environment.",
+    "link": "https://github.com/NullCipherr/vim-config",
+    "codeLink": "https://github.com/NullCipherr/vim-config",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/vim-config",
+    "technologies": [
+      "Vim Script"
+    ],
+    "details": "This repository contains a set of custom configurations for the Vim text editor, focused on optimization for compiling C and Python code. In addition to efficient compilation shortcuts, it includes improvements to the user interface, performance settings, and best practices for a more productive development environment. Last update: 2025-01-22. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "zsh-config",
+    "description": "A custom .zshrc configuration for an enhanced terminal experience using Oh-My-Zsh. This configuration includes an elegant prompt setup, useful aliases for Git and file navigation, command autosuggestions with zsh-autosuggestions, and syntax highlighting with zsh-syntax-highlighting. It also features a robust history management system, disk spac",
+    "link": "https://github.com/NullCipherr/zsh-config",
+    "codeLink": "https://github.com/NullCipherr/zsh-config",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/zsh-config",
+    "technologies": [
+      "Shell"
+    ],
+    "details": "A custom .zshrc configuration for an enhanced terminal experience using Oh-My-Zsh. This configuration includes an elegant prompt setup, useful aliases for Git and file navigation, command autosuggestions with zsh-autosuggestions, and syntax highlighting with zsh-syntax-highlighting. It also features a robust history management system, disk spac Last update: 2025-01-22. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "cube-universe-theory",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/cube-universe-theory",
+    "codeLink": "https://github.com/NullCipherr/cube-universe-theory",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/cube-universe-theory",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-09-20. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "MPI_Needleman_Wunsh",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/MPI_Needleman_Wunsh",
+    "codeLink": "https://github.com/NullCipherr/MPI_Needleman_Wunsh",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/MPI_Needleman_Wunsh",
+    "technologies": [
+      "C"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-09-13. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Network_Department_Simulation",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/Network_Department_Simulation",
+    "codeLink": "https://github.com/NullCipherr/Network_Department_Simulation",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Network_Department_Simulation",
+    "technologies": [
+      "Source Code"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-09-07. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Tetris-Game",
+    "description": "This repository contains a modern and visually appealing version of the classic Tetris game, called Tetris 3D. Developed using HTML, CSS, and JavaScript, the project offers an immersive experience with 3D graphics and intuitive controls.",
+    "link": "https://nullcipherr.github.io/Tetris-Game/",
+    "codeLink": "https://github.com/NullCipherr/Tetris-Game",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Tetris-Game",
+    "technologies": [
+      "HTML"
+    ],
+    "details": "This repository contains a modern and visually appealing version of the classic Tetris game, called Tetris 3D. Developed using HTML, CSS, and JavaScript, the project offers an immersive experience with 3D graphics and intuitive controls. Last update: 2024-09-06. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "TicTacToe-Game",
+    "description": "This project is a modern and interactive version of the classic Tic-Tac-Toe game, developed using HTML, CSS, and JavaScript. It offers an engaging gaming experience with smooth animations, visual effects, and two game modes.",
+    "link": "https://nullcipherr.github.io/TicTacToe-Game/",
+    "codeLink": "https://github.com/NullCipherr/TicTacToe-Game",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/TicTacToe-Game",
+    "technologies": [
+      "HTML"
+    ],
+    "details": "This project is a modern and interactive version of the classic Tic-Tac-Toe game, developed using HTML, CSS, and JavaScript. It offers an engaging gaming experience with smooth animations, visual effects, and two game modes. Last update: 2024-09-04. Stars: 0. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Titanic_Survival_Prediction",
+    "description": "This repository contains a comprehensive analysis of Titanic data, including preprocessing, data visualization, and building machine learning models to predict passenger survival.",
+    "link": "https://github.com/NullCipherr/Titanic_Survival_Prediction",
+    "codeLink": "https://github.com/NullCipherr/Titanic_Survival_Prediction",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Titanic_Survival_Prediction",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "details": "This repository contains a comprehensive analysis of Titanic data, including preprocessing, data visualization, and building machine learning models to predict passenger survival. Last update: 2024-09-02. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Snake-Game",
+    "description": "This repository contains a classic Snake Game implemented in HTML, CSS and JavaScript. Test your skills by guiding the snake to eat the mouse while avoiding hitting the walls or yourself. Simple, fun and nostalgic.",
+    "link": "https://nullcipherr.github.io/Snake-Game/",
+    "codeLink": "https://github.com/NullCipherr/Snake-Game",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Snake-Game",
+    "technologies": [
+      "HTML"
+    ],
+    "details": "This repository contains a classic Snake Game implemented in HTML, CSS and JavaScript. Test your skills by guiding the snake to eat the mouse while avoiding hitting the walls or yourself. Simple, fun and nostalgic. Last update: 2024-09-02. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Hangman-Game",
+    "description": "This repository contains a Hangman game developed in HTML, CSS and pure JavaScript. The project offers a modern and engaging version of the classic word game, with a friendly and responsive interface, diverse words, animations and sound effects that make the experience even more fun and challenging for players of all ages.",
+    "link": "https://nullcipherr.github.io/Hangman-Game/",
+    "codeLink": "https://github.com/NullCipherr/Hangman-Game",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Hangman-Game",
+    "technologies": [
+      "HTML"
+    ],
+    "details": "This repository contains a Hangman game developed in HTML, CSS and pure JavaScript. The project offers a modern and engaging version of the classic word game, with a friendly and responsive interface, diverse words, animations and sound effects that make the experience even more fun and challenging for players of all ages. Last update: 2024-08-30. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Sentiment_Analyzer_PLN",
+    "description": "This project utilizes Natural Language Processing (NLP) techniques to classify sentiments in text. The code is written in Python and leverages popular libraries such as scikit-learn, nltk, and pandas.",
+    "link": "https://github.com/NullCipherr/Sentiment_Analyzer_PLN",
+    "codeLink": "https://github.com/NullCipherr/Sentiment_Analyzer_PLN",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Sentiment_Analyzer_PLN",
+    "technologies": [
+      "Jupyter Notebook"
+    ],
+    "details": "This project utilizes Natural Language Processing (NLP) techniques to classify sentiments in text. The code is written in Python and leverages popular libraries such as scikit-learn, nltk, and pandas. Last update: 2024-08-28. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Needleman_Wunsh_Threads",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/Needleman_Wunsh_Threads",
+    "codeLink": "https://github.com/NullCipherr/Needleman_Wunsh_Threads",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Needleman_Wunsh_Threads",
+    "technologies": [
+      "C"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-08-24. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Cpp_Language",
+    "description": "This repository is dedicated to learning and developing C++, one of the most powerful and versatile programming languages. Here you'll find a collection of examples, tutorials, projects, and resources to help you master C++.",
+    "link": "https://github.com/NullCipherr/Cpp_Language",
+    "codeLink": "https://github.com/NullCipherr/Cpp_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Cpp_Language",
+    "technologies": [
+      "C++"
+    ],
+    "details": "This repository is dedicated to learning and developing C++, one of the most powerful and versatile programming languages. Here you'll find a collection of examples, tutorials, projects, and resources to help you master C++. Last update: 2024-08-23. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Frontend-Kit",
+    "description": "Frontend-Kit is a set of tools, components and utilities to speed up the development of modern and responsive user interfaces. This repository offers a collection of reusable components, preconfigured styles, and optimized scripts, allowing developers to create frontend applications efficiently and consistently.",
+    "link": "https://github.com/NullCipherr/Frontend-Kit",
+    "codeLink": "https://github.com/NullCipherr/Frontend-Kit",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Frontend-Kit",
+    "technologies": [
+      "CSS"
+    ],
+    "details": "Frontend-Kit is a set of tools, components and utilities to speed up the development of modern and responsive user interfaces. This repository offers a collection of reusable components, preconfigured styles, and optimized scripts, allowing developers to create frontend applications efficiently and consistently. Last update: 2024-08-22. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "x86_Assembly_Language",
+    "description": "This repository is devoted to the storage of projects, examples, and source code written in x86 32-bit assembly language. Within these digital archives, you'll discover a curated collection of assembly programs, covering a spectrum of applications and topics specific to the x86 architecture. From bare-bones projects to intricate examples, this repo",
+    "link": "https://github.com/NullCipherr/x86_Assembly_Language",
+    "codeLink": "https://github.com/NullCipherr/x86_Assembly_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/x86_Assembly_Language",
+    "technologies": [
+      "Assembly"
+    ],
+    "details": "This repository is devoted to the storage of projects, examples, and source code written in x86 32-bit assembly language. Within these digital archives, you'll discover a curated collection of assembly programs, covering a spectrum of applications and topics specific to the x86 architecture. From bare-bones projects to intricate examples, this repo Last update: 2024-08-18. Stars: 5. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Java_Language",
+    "description": "This repository is dedicated to storing projects, examples, and source code written in the Java programming language. Here, you'll find a collection of programs covering a variety of applications and topics in Java. From simple projects to more complex examples, this repository serves as an open resource for those looking to learn, explore, and enh",
+    "link": "https://github.com/NullCipherr/Java_Language",
+    "codeLink": "https://github.com/NullCipherr/Java_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Java_Language",
+    "technologies": [
+      "Java"
+    ],
+    "details": "This repository is dedicated to storing projects, examples, and source code written in the Java programming language. Here, you'll find a collection of programs covering a variety of applications and topics in Java. From simple projects to more complex examples, this repository serves as an open resource for those looking to learn, explore, and enh Last update: 2024-08-18. Stars: 4. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Concurrent_Programming",
+    "description": "This repository contains a series of exercises and practical examples for the Concurrent Programming course. The aim is to provide educational resources to help students and developers understand and master the fundamental concepts of concurrent programming, including multithreading, parallelism, synchronization, and resource management.",
+    "link": "https://github.com/NullCipherr/Concurrent_Programming",
+    "codeLink": "https://github.com/NullCipherr/Concurrent_Programming",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Concurrent_Programming",
+    "technologies": [
+      "C"
+    ],
+    "details": "This repository contains a series of exercises and practical examples for the Concurrent Programming course. The aim is to provide educational resources to help students and developers understand and master the fundamental concepts of concurrent programming, including multithreading, parallelism, synchronization, and resource management. Last update: 2024-08-15. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Stochastic_Processes",
+    "description": "This repository contains a series of exercises, practical examples and educational resources on Stochastic Processes. Our goal is to help students and researchers understand and apply fundamental concepts of stochastic processes, including Markov chains, Poisson processes, random walks, and more.",
+    "link": "https://github.com/NullCipherr/Stochastic_Processes",
+    "codeLink": "https://github.com/NullCipherr/Stochastic_Processes",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Stochastic_Processes",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains a series of exercises, practical examples and educational resources on Stochastic Processes. Our goal is to help students and researchers understand and apply fundamental concepts of stochastic processes, including Markov chains, Poisson processes, random walks, and more. Last update: 2024-08-13. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "C_Language",
+    "description": "This repository is dedicated to the storage of projects, examples, and source code in the C programming language. Here, you will find a collection of programs written in C, covering a variety of applications and topics.",
+    "link": "https://github.com/NullCipherr/C_Language",
+    "codeLink": "https://github.com/NullCipherr/C_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/C_Language",
+    "technologies": [
+      "C"
+    ],
+    "details": "This repository is dedicated to the storage of projects, examples, and source code in the C programming language. Here, you will find a collection of programs written in C, covering a variety of applications and topics. Last update: 2024-08-08. Stars: 5. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Machine_Learning",
+    "description": "This repository contains a series of exercises, practical examples, and educational resources about Machine Learning. Our goal is to help students, researchers, and developers understand and apply fundamental machine learning concepts, including supervised and unsupervised algorithms, neural networks, and more.",
+    "link": "https://github.com/NullCipherr/Machine_Learning",
+    "codeLink": "https://github.com/NullCipherr/Machine_Learning",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Machine_Learning",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains a series of exercises, practical examples, and educational resources about Machine Learning. Our goal is to help students, researchers, and developers understand and apply fundamental machine learning concepts, including supervised and unsupervised algorithms, neural networks, and more. Last update: 2024-08-02. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Leet_Code",
+    "description": " This repository contains a series of exercises, practical examples, and solutions to LeetCode problems. Our goal is to help students, developers, and programming enthusiasts improve their problem-solving and algorithmic skills by preparing them for technical interviews and coding challenges.",
+    "link": "https://github.com/NullCipherr/Leet_Code",
+    "codeLink": "https://github.com/NullCipherr/Leet_Code",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Leet_Code",
+    "technologies": [
+      "C++"
+    ],
+    "details": " This repository contains a series of exercises, practical examples, and solutions to LeetCode problems. Our goal is to help students, developers, and programming enthusiasts improve their problem-solving and algorithmic skills by preparing them for technical interviews and coding challenges. Last update: 2024-08-01. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Fuzzy_Anxiety_Diagnosis",
+    "description": "This repository contains a fuzzy logic-based diagnostic system designed to help healthcare professionals make informed decisions.",
+    "link": "https://github.com/NullCipherr/Fuzzy_Anxiety_Diagnosis",
+    "codeLink": "https://github.com/NullCipherr/Fuzzy_Anxiety_Diagnosis",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Fuzzy_Anxiety_Diagnosis",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains a fuzzy logic-based diagnostic system designed to help healthcare professionals make informed decisions. Last update: 2024-07-12. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Medical_Diagnostic_System",
+    "description": "This repository contains the source code of a prototype for a medical diagnostic system implemented in Prolog.",
+    "link": "https://github.com/NullCipherr/Medical_Diagnostic_System",
+    "codeLink": "https://github.com/NullCipherr/Medical_Diagnostic_System",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Medical_Diagnostic_System",
+    "technologies": [
+      "Prolog"
+    ],
+    "details": "This repository contains the source code of a prototype for a medical diagnostic system implemented in Prolog. Last update: 2024-04-02. Stars: 3. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "HSV_Color_Spectrum_Manipulation",
+    "description": "This repository contains a program that performs the alteration of a range of hue values in a colored image, represented in the HSV color system.",
+    "link": "https://github.com/NullCipherr/HSV_Color_Spectrum_Manipulation",
+    "codeLink": "https://github.com/NullCipherr/HSV_Color_Spectrum_Manipulation",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/HSV_Color_Spectrum_Manipulation",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains a program that performs the alteration of a range of hue values in a colored image, represented in the HSV color system. Last update: 2024-04-02. Stars: 4. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "ABNT",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/ABNT",
+    "codeLink": "https://github.com/NullCipherr/ABNT",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/ABNT",
+    "technologies": [
+      "Source Code"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Portugol_Language",
+    "description": "This repository contains a collection of codes written in Portugol. Portugol is a pseudolanguage that aims to facilitate the learning of programming, especially for Portuguese speakers.",
+    "link": "https://github.com/NullCipherr/Portugol_Language",
+    "codeLink": "https://github.com/NullCipherr/Portugol_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Portugol_Language",
+    "technologies": [
+      "Portugol"
+    ],
+    "details": "This repository contains a collection of codes written in Portugol. Portugol is a pseudolanguage that aims to facilitate the learning of programming, especially for Portuguese speakers. Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Six_Degrees_of_Kevin_Bacon",
+    "description": "This repository contains the implementation of a program that solves the “Six Degrees of Kevin Bacon” game. The game is based on the six degrees of separation theory, which states that a maximum of six connections are needed for any two people to be linked.",
+    "link": "https://github.com/NullCipherr/Six_Degrees_of_Kevin_Bacon",
+    "codeLink": "https://github.com/NullCipherr/Six_Degrees_of_Kevin_Bacon",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Six_Degrees_of_Kevin_Bacon",
+    "technologies": [
+      "Java"
+    ],
+    "details": "This repository contains the implementation of a program that solves the “Six Degrees of Kevin Bacon” game. The game is based on the six degrees of separation theory, which states that a maximum of six connections are needed for any two people to be linked. Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Hospital_Location_Optimizer",
+    "description": "This repository contains the implementation of a program that solves the classic optimization problem known as the “Facility Location Problem”. The program determines the best location for a facility, such as a hospital, based on geographical demands, costs, and distances involved.",
+    "link": "https://github.com/NullCipherr/Hospital_Location_Optimizer",
+    "codeLink": "https://github.com/NullCipherr/Hospital_Location_Optimizer",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Hospital_Location_Optimizer",
+    "technologies": [
+      "Java"
+    ],
+    "details": "This repository contains the implementation of a program that solves the classic optimization problem known as the “Facility Location Problem”. The program determines the best location for a facility, such as a hospital, based on geographical demands, costs, and distances involved. Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Pong2D",
+    "description": "This repository contains the source code for a 2D Pong game implemented in Java. Pong is one of the earliest arcade games and is famous for its simplicity. The objective of the game is to bounce the ball to the opponent’s side of the screen.",
+    "link": "https://github.com/NullCipherr/Pong2D",
+    "codeLink": "https://github.com/NullCipherr/Pong2D",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Pong2D",
+    "technologies": [
+      "Java"
+    ],
+    "details": "This repository contains the source code for a 2D Pong game implemented in Java. Pong is one of the earliest arcade games and is famous for its simplicity. The objective of the game is to bounce the ball to the opponent’s side of the screen. Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Puzzle_Solver",
+    "description": "This repository contains the implementation of a solver for an edge-matching puzzle game. In the game, a grid of blocks is given, where each block has a number on each edge. The goal is to place each block in an appropriate position. A block is in an appropriate position if the adjacent blocks (above, to the right, below, and to the left) have the ",
+    "link": "https://github.com/NullCipherr/Puzzle_Solver",
+    "codeLink": "https://github.com/NullCipherr/Puzzle_Solver",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Puzzle_Solver",
+    "technologies": [
+      "Prolog"
+    ],
+    "details": "This repository contains the implementation of a solver for an edge-matching puzzle game. In the game, a grid of blocks is given, where each block has a number on each edge. The goal is to place each block in an appropriate position. A block is in an appropriate position if the adjacent blocks (above, to the right, below, and to the left) have the  Last update: 2024-03-18. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "FitManager",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/FitManager",
+    "codeLink": "https://github.com/NullCipherr/FitManager",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/FitManager",
+    "technologies": [
+      "CSS"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2024-03-15. Stars: 1. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Penetration_Test_Kali_Linux",
+    "description": "This repository is dedicated to practical assessment work in the area of ​​cybersecurity, focused on the use of penetration testing tools available on the Kali Linux operating system.",
+    "link": "https://github.com/NullCipherr/Penetration_Test_Kali_Linux",
+    "codeLink": "https://github.com/NullCipherr/Penetration_Test_Kali_Linux",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Penetration_Test_Kali_Linux",
+    "technologies": [
+      "HTML"
+    ],
+    "details": "This repository is dedicated to practical assessment work in the area of ​​cybersecurity, focused on the use of penetration testing tools available on the Kali Linux operating system. Last update: 2024-03-14. Stars: 3. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "RPGGame_Racket_Questions",
+    "description": "This project is a playful game aimed at teaching the Racket programming language. The goal is to make learning programming more engaging and effective, conveying programming concepts in an interactive and fun way.",
+    "link": "https://github.com/NullCipherr/RPGGame_Racket_Questions",
+    "codeLink": "https://github.com/NullCipherr/RPGGame_Racket_Questions",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/RPGGame_Racket_Questions",
+    "technologies": [
+      "Racket"
+    ],
+    "details": "This project is a playful game aimed at teaching the Racket programming language. The goal is to make learning programming more engaging and effective, conveying programming concepts in an interactive and fun way. Last update: 2024-03-13. Stars: 2. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Prolog_Language",
+    "description": "This repository is dedicated to the Prolog programming language, aimed at providing comprehensive resources for programmers of all experience levels. Prolog is a widely used logic programming language employed in artificial intelligence, natural language processing, expert systems, among other areas.",
+    "link": "https://github.com/NullCipherr/Prolog_Language",
+    "codeLink": "https://github.com/NullCipherr/Prolog_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Prolog_Language",
+    "technologies": [
+      "Prolog"
+    ],
+    "details": "This repository is dedicated to the Prolog programming language, aimed at providing comprehensive resources for programmers of all experience levels. Prolog is a widely used logic programming language employed in artificial intelligence, natural language processing, expert systems, among other areas. Last update: 2024-03-11. Stars: 2. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Powershell_Scripts",
+    "description": "This directory is a repository dedicated to scripts written in the PowerShell scripting language. It serves as a resource for those who wish to automate tasks, manipulate systems and services, and improve overall workflow efficiency.",
+    "link": "https://github.com/NullCipherr/Powershell_Scripts",
+    "codeLink": "https://github.com/NullCipherr/Powershell_Scripts",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Powershell_Scripts",
+    "technologies": [
+      "PowerShell"
+    ],
+    "details": "This directory is a repository dedicated to scripts written in the PowerShell scripting language. It serves as a resource for those who wish to automate tasks, manipulate systems and services, and improve overall workflow efficiency. Last update: 2024-02-19. Stars: 2. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Bash_Scripts",
+    "description": "This repository is a comprehensive collection of useful and practical Bash scripts. It was created to assist both beginners and advanced users in automating common tasks, solving problems, and learning more about Bash programming.",
+    "link": "https://github.com/NullCipherr/Bash_Scripts",
+    "codeLink": "https://github.com/NullCipherr/Bash_Scripts",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Bash_Scripts",
+    "technologies": [
+      "Shell"
+    ],
+    "details": "This repository is a comprehensive collection of useful and practical Bash scripts. It was created to assist both beginners and advanced users in automating common tasks, solving problems, and learning more about Bash programming. Last update: 2024-02-09. Stars: 2. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Racket_Language",
+    "description": "This repository is dedicated to the storage of projects, examples, and source code written in the Racket programming language. Within these digital walls, you'll encounter a diverse collection of programs, spanning various applications and topics in the Racket language. From small-scale projects to more intricate examples, this repository stands as",
+    "link": "https://github.com/NullCipherr/Racket_Language",
+    "codeLink": "https://github.com/NullCipherr/Racket_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Racket_Language",
+    "technologies": [
+      "Racket"
+    ],
+    "details": "This repository is dedicated to the storage of projects, examples, and source code written in the Racket programming language. Within these digital walls, you'll encounter a diverse collection of programs, spanning various applications and topics in the Racket language. From small-scale projects to more intricate examples, this repository stands as Last update: 2024-01-03. Stars: 4. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Normal_Map_Generator",
+    "description": "This repository includes a Python script for generating normal maps from images. The goal is to simulate surface details in 3D graphics, particularly useful for games and 3D rendering.",
+    "link": "https://github.com/NullCipherr/Normal_Map_Generator",
+    "codeLink": "https://github.com/NullCipherr/Normal_Map_Generator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Normal_Map_Generator",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository includes a Python script for generating normal maps from images. The goal is to simulate surface details in 3D graphics, particularly useful for games and 3D rendering. Last update: 2023-12-14. Stars: 3. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Scoreboard_Simulator",
+    "description": "Public repository from my GitHub profile.",
+    "link": "https://github.com/NullCipherr/Scoreboard_Simulator",
+    "codeLink": "https://github.com/NullCipherr/Scoreboard_Simulator",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Scoreboard_Simulator",
+    "technologies": [
+      "C"
+    ],
+    "details": "Public repository from my GitHub profile. Last update: 2023-12-05. Stars: 3. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Python_Language",
+    "description": "This repository is dedicated to storing projects, examples, and source code written in the Python programming language. Within these digital confines, you'll encounter a diverse collection of Python programs, spanning various applications and topics. From beginner-friendly projects to more advanced examples, this repository serves as an open resour",
+    "link": "https://github.com/NullCipherr/Python_Language",
+    "codeLink": "https://github.com/NullCipherr/Python_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Python_Language",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository is dedicated to storing projects, examples, and source code written in the Python programming language. Within these digital confines, you'll encounter a diverse collection of Python programs, spanning various applications and topics. From beginner-friendly projects to more advanced examples, this repository serves as an open resour Last update: 2023-11-30. Stars: 6. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "High_Boost_Filtering",
+    "description": "This repository contains Python implementations of the High Boost Filtering method, an image processing technique used to enhance high-frequency features in an image, resulting in a sharper and more detailed image.",
+    "link": "https://github.com/NullCipherr/High_Boost_Filtering",
+    "codeLink": "https://github.com/NullCipherr/High_Boost_Filtering",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/High_Boost_Filtering",
+    "technologies": [
+      "Python"
+    ],
+    "details": "This repository contains Python implementations of the High Boost Filtering method, an image processing technique used to enhance high-frequency features in an image, resulting in a sharper and more detailed image. Last update: 2023-11-20. Stars: 5. Forks: 0.",
+    "status": "Prototype"
+  },
+  {
+    "title": "Pascal_Language",
+    "description": "This repository is dedicated to storing projects, examples, and source code written in the Pascal programming language. Within this digital archive, you'll discover a curated collection of Pascal programs, covering a spectrum of applications and topics. From foundational projects suitable for beginners to more advanced examples, this repository ser",
+    "link": "https://github.com/NullCipherr/Pascal_Language",
+    "codeLink": "https://github.com/NullCipherr/Pascal_Language",
+    "imageUrl": "https://opengraph.githubassets.com/1/NullCipherr/Pascal_Language",
+    "technologies": [
+      "Pascal"
+    ],
+    "details": "This repository is dedicated to storing projects, examples, and source code written in the Pascal programming language. Within this digital archive, you'll discover a curated collection of Pascal programs, covering a spectrum of applications and topics. From foundational projects suitable for beginners to more advanced examples, this repository ser Last update: 2023-09-25. Stars: 4. Forks: 0.",
+    "status": "Prototype"
+  }
+]

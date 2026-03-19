@@ -9,11 +9,17 @@ import ScrollDownIndicator from './ScrollDownIndicator';
 import { translations, Language } from '../config/translations';
 import { useAudio } from '../hooks/useAudio';
 
-const projects = [
+const GITHUB_USERNAME = 'NullCipherr';
+const PROJECTS_CACHE_KEY = 'portfolio-github-projects-cache-v1';
+const PROJECTS_CACHE_TTL_MS = 1000 * 60 * 45; // 45 minutes
+const MAX_PROJECTS = 30;
+
+const fallbackProjects = [
     {
         title: "Project Alpha",
         description: "A cutting-edge application for managing tasks and boosting productivity.",
         link: "#",
+        codeLink: "#",
         imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop", 
         technologies: ["React", "Node.js", "Express", "MongoDB"],
         details: "Project Alpha is a comprehensive task management solution designed for modern teams. It features a real-time collaborative dashboard, deadline tracking, and integration with popular tools like Slack and Google Calendar. The backend is built on a robust RESTful API, ensuring scalability and performance.",
@@ -23,6 +29,7 @@ const projects = [
         title: "Project Beta",
         description: "An immersive 3D game experience developed with Unreal Engine.",
         link: "#",
+        codeLink: "#",
         imageUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
         technologies: ["Unreal Engine", "C++", "Blender", "Perforce"],
         details: "Project Beta is a third-person action-adventure game that pushes the boundaries of real-time graphics. It features a dynamic weather system, advanced AI for non-playable characters, and a complex physics-based combat system. The world is built with a focus on exploration and environmental storytelling.",
@@ -32,6 +39,7 @@ const projects = [
         title: "Project Gamma",
         description: "A machine learning model for sentiment analysis with high accuracy.",
         link: "#",
+        codeLink: "#",
         imageUrl: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop",
         technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas"],
         details: "Project Gamma utilizes a transformer-based neural network to analyze and classify text sentiment. Trained on a diverse dataset of over one million reviews, the model can accurately predict sentiment for applications ranging from customer feedback analysis to social media monitoring.",
@@ -41,6 +49,7 @@ const projects = [
         title: "Project Delta",
         description: "A sleek e-commerce platform with a focus on user experience.",
         link: "#",
+        codeLink: "#",
         imageUrl: "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=1200&auto=format&fit=crop",
         technologies: ["Vue.js", "Firebase", "Stripe", "SASS"],
         details: "Project Delta is a modern e-commerce storefront with a clean design and intuitive navigation. It features secure payments through Stripe, real-time inventory management with Firebase, and a fully responsive layout for a seamless shopping experience on any device.",
@@ -48,7 +57,55 @@ const projects = [
     }
 ];
 
-export type Project = typeof projects[0];
+export interface Project {
+    title: string;
+    description: string;
+    link: string;
+    codeLink?: string;
+    imageUrl: string;
+    technologies: string[];
+    details: string;
+    status: 'Live' | 'Beta' | 'Prototype';
+}
+
+interface GithubRepo {
+    name: string;
+    description: string | null;
+    homepage: string | null;
+    html_url: string;
+    language: string | null;
+    topics?: string[];
+    stargazers_count: number;
+    forks_count: number;
+    pushed_at: string;
+    archived: boolean;
+    fork: boolean;
+}
+
+const getProjectStatus = (pushedAt: string): Project['status'] => {
+    const daysAgo = (Date.now() - new Date(pushedAt).getTime()) / (1000 * 60 * 60 * 24);
+    if (daysAgo <= 45) return 'Live';
+    if (daysAgo <= 220) return 'Beta';
+    return 'Prototype';
+};
+
+const mapRepoToProject = (repo: GithubRepo): Project => {
+    const safeDescription = repo.description?.trim() || 'Public repository from my GitHub profile.';
+    const technologies = (repo.topics && repo.topics.length > 0)
+        ? repo.topics.slice(0, 6)
+        : (repo.language ? [repo.language] : ['Source Code']);
+
+    return {
+        title: repo.name,
+        description: safeDescription,
+        link: (repo.homepage && repo.homepage.trim()) ? repo.homepage.trim() : repo.html_url,
+        codeLink: repo.html_url,
+        imageUrl: `https://opengraph.githubassets.com/1/${GITHUB_USERNAME}/${repo.name}`,
+        technologies,
+        details: `${safeDescription} Last update: ${new Date(repo.pushed_at).toLocaleDateString()}. Stars: ${repo.stargazers_count}. Forks: ${repo.forks_count}.`,
+        status: getProjectStatus(repo.pushed_at),
+    };
+};
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -69,6 +126,7 @@ interface ProjectsSectionProps {
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ language }) => {
     const t = translations[language].projects;
     const { playSound } = useAudio();
+    const [projects, setProjects] = useState<Project[]>(fallbackProjects);
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [totalPages, setTotalPages] = useState(0);
@@ -85,6 +143,70 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ language }) => {
             });
         }
     };
+
+    useEffect(() => {
+        let isMounted = true;
+
+        const loadProjects = async () => {
+            try {
+                const cachedRaw = localStorage.getItem(PROJECTS_CACHE_KEY);
+                if (cachedRaw) {
+                    const cached = JSON.parse(cachedRaw) as { timestamp: number; data: Project[] };
+                    if (Date.now() - cached.timestamp < PROJECTS_CACHE_TTL_MS && Array.isArray(cached.data) && cached.data.length > 0) {
+                        if (isMounted) setProjects(cached.data);
+                    }
+                }
+            } catch (error) {
+                console.warn('Failed to load projects from cache:', error);
+            }
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100`,
+                    { headers: { Accept: 'application/vnd.github+json' } }
+                );
+
+                if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
+
+                const repos = (await response.json()) as GithubRepo[];
+                const mapped = repos
+                    .filter((repo) => !repo.fork && !repo.archived)
+                    .sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
+                    .slice(0, MAX_PROJECTS)
+                    .map(mapRepoToProject);
+
+                if (mapped.length === 0) throw new Error('No repositories available after filtering');
+
+                if (isMounted) setProjects(mapped);
+                localStorage.setItem(PROJECTS_CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: mapped }));
+            } catch (error) {
+                console.warn('Failed to load GitHub repositories from API. Trying static fallback:', error);
+                try {
+                    const staticResponse = await fetch('/github-projects.json');
+                    if (!staticResponse.ok) throw new Error(`Static fallback failed: ${staticResponse.status}`);
+                    const staticProjects = (await staticResponse.json()) as Project[];
+                    if (Array.isArray(staticProjects) && staticProjects.length > 0) {
+                        if (isMounted) setProjects(staticProjects.slice(0, MAX_PROJECTS));
+                        localStorage.setItem(
+                            PROJECTS_CACHE_KEY,
+                            JSON.stringify({ timestamp: Date.now(), data: staticProjects.slice(0, MAX_PROJECTS) })
+                        );
+                        return;
+                    }
+                    throw new Error('Static fallback is empty');
+                } catch (fallbackError) {
+                    console.warn('Static fallback failed. Using local fallback projects:', fallbackError);
+                    if (isMounted) setProjects(fallbackProjects);
+                }
+            }
+        };
+
+        loadProjects();
+
+        return () => {
+            isMounted = false;
+        };
+    }, []);
 
     useEffect(() => {
         const container = scrollContainerRef.current;
@@ -112,7 +234,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ language }) => {
                 container.removeEventListener('scroll', handleScroll);
             }
         };
-    }, []);
+    }, [projects.length]);
 
     useEffect(() => {
         if (totalPages <= 1 || isHovering) return;

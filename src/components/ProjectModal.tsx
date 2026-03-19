@@ -68,17 +68,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, l
         <AnimatePresence>
             {isOpen && (
                 <motion.div 
-                    // Changed from bg-background/95 backdrop-blur-xl to bg-black/90
-                    // This creates a dark overlay that allows the main particles to be faintly seen,
-                    // without the "milky" glass effect.
-                    className="fixed inset-0 z-[100] bg-black/90 overflow-y-auto overflow-x-hidden"
+                    className="fixed inset-0 z-[100] bg-[#03060d] overflow-y-auto overflow-x-hidden"
                     variants={pageVariants}
                     initial="hidden"
                     animate="visible"
                     exit="exit"
                 >
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(var(--primary-rgb),0.08),transparent_35%),radial-gradient(circle_at_80%_85%,rgba(var(--primary-rgb),0.06),transparent_35%)] pointer-events-none" />
                     {/* Fixed Header / Navigation */}
-                    <div className="sticky top-0 z-50 w-full bg-black/80 border-b border-theme-primary/30 shadow-lg shadow-theme-primary/5">
+                    <div className="sticky top-0 z-50 w-full bg-[#040810] border-b border-theme-primary/30 shadow-lg shadow-theme-primary/5">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                             
                             {/* Breadcrumbs / Back Button */}
@@ -159,7 +157,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, l
                                     
                                     {/* Tech Stack Card */}
                                     <motion.div 
-                                        className="p-6 rounded-2xl bg-white/5 border border-white/10"
+                                        className="p-6 rounded-2xl bg-black/60 border border-white/10"
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: 0.5 }}
@@ -196,13 +194,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, l
                                         >
                                             <i className="fas fa-external-link-alt"></i> {t.links.live}
                                         </a>
-                                        <button 
+                                        <a 
+                                            href={project.codeLink || project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             onClick={() => playSound('click')}
                                             onMouseEnter={() => playSound('hover')}
                                             className="w-full h-12 rounded-xl border border-white/20 hover:bg-white/5 text-gray-300 font-bold transition-all flex items-center justify-center gap-2"
                                         >
                                             <i className="fab fa-github"></i> {t.links.code}
-                                        </button>
+                                        </a>
                                     </motion.div>
 
                                 </div>
@@ -219,7 +220,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, l
                                     <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                                         <span className="text-theme-primary">#</span> {t.overview}
                                     </h2>
-                                    <div className="p-8 rounded-2xl bg-black/20 border-l-4 border-theme-primary mb-8 text-lg leading-relaxed text-gray-200">
+                                    <div className="p-8 rounded-2xl bg-black/55 border-l-4 border-theme-primary mb-8 text-lg leading-relaxed text-gray-200">
                                         "{project.description}"
                                     </div>
                                     
@@ -238,10 +239,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, l
                                     {/* Mock Gallery Section */}
                                     <h3 className="text-xl font-bold text-white mt-10 mb-6">Visual Gallery</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div className="h-48 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-600">
+                                        <div className="h-48 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center text-gray-600">
                                             <i className="fas fa-image text-3xl"></i>
                                         </div>
-                                        <div className="h-48 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-600">
+                                        <div className="h-48 rounded-xl bg-black/60 border border-white/10 flex items-center justify-center text-gray-600">
                                             <i className="fas fa-image text-3xl"></i>
                                         </div>
                                     </div>
