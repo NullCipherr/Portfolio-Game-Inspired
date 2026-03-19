@@ -150,13 +150,7 @@ npm run deploy
 
 ## ⚙️ Variáveis de Ambiente
 
-Atualmente, o `vite.config.ts` lê `GEMINI_API_KEY` via `loadEnv`. Se necessário, crie um arquivo `.env`:
-
-```env
-GEMINI_API_KEY=sua_chave_aqui
-```
-
-Se a aplicação não consumir essa chave em runtime, ela pode permanecer apenas como configuração futura.
+No estado atual, este projeto **não exige variáveis de ambiente** para rodar localmente.
 
 ## 📄 Licença
 
